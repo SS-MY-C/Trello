@@ -1,0 +1,51 @@
+#register-login{
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url("../images/lef-large.svg"), url("../images/right-large.svg");
+    background-repeat: no-repeat;
+    background-position: left center,right center;
+    background-size: 20% 20%;
+}
+#register-login .logo{
+    display: block;
+    margin: 40px auto;
+    height: 80px;
+    background:url("../images/header-logo-2x.png") no-repeat 50% 0/80px 30px; ;
+    background-size: contain;
+}
+#register-login .section-wrapper{
+    margin: 0 auto;
+    max-width: 480px;
+}
+#register-login .account-form{
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 25px 40px;
+    box-shadow: rgba(0,0,0,0.1) 0 0 15px;
+}
+#register-login h1{
+    text-align: center;
+    color: #5E6C84;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    line-height: 28px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+#register-login .signin-signup-separator{
+    display: inline-block;
+    margin-bottom: 1.2em;
+    width: 10%;
+    line-height: 1.44em;
+    text-align: center;
+}
+.btn.btn-success {
+    background: #5AAC44;
+    color: #fff;
+}
+.btn.btn-success:hover {
+    background-color: #61bd4f;
+}

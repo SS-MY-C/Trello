@@ -1,0 +1,264 @@
+html,body{
+    height: 100%;
+    color: black;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    background-color: rgb(238, 149, 114,.1);
+}
+html, body, ul, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+u {
+    cursor: pointer;
+}
+u:hover {
+    color: #000;
+}
+header{
+    position: relative;
+    padding: 4px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    box-sizing: border-box;
+    background-color: #cc3366;
+    height: 40px;
+    box-shadow: 0px 5px 20px rgb(238, 149, 114);
+}
+header .left{
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 1;
+}
+header .logo{
+    display: block;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 5px;
+    background: url("../images/header-logo-2x.png") no-repeat 100% 0/80px 30px;
+    cursor: pointer;
+    height: 30px;
+    width: 80px;
+}
+header .right{
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+header .avatar{
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+}
+#home main{
+    margin: 10px;
+    flex-grow: 1;
+}
+#home main h2{
+    height: 32px;
+    line-height: 32px;
+}
+
+/* icon */
+@font-face {
+    font-family: trellicons;
+    src: url(./fonts/trellicons.eot);
+    src: url(./fonts/trellicons-iefix.eot) format("embedded-opentype"), url(./fonts/trellicons.ttf) format("truetype"), url(./fonts/trellicons.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+.icon {
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    min-width: 32px;
+    font-family: trellicons;
+    font-style: normal;
+    font-weight: 400;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: bottom;
+    transition-duration: 85ms;
+    transition-timing-function: ease;
+}
+.icon.icon-home:before {
+    content: "\E933";
+}
+.icon.icon-board:before {
+    content: "\E90A";
+}
+.icon.icon-add:before {
+    content: "\E901";
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    margin: 0 0 14px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: none;
+    border: 0;
+    outline: none;
+    background-color: #E2E4E6;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    color: hsl(0,0%,55%);
+    cursor: pointer;
+    transition: .1s ease;
+}
+.btn.btn-icon {
+    margin: 0 4px 0 0;
+    padding: 0 10px;
+    height: 32px;
+    background-color: hsla(0,20%,80%,.4);
+    box-shadow: 0px 2px #EE9572;
+    color: #fff;
+    line-height: 32px;
+}
+.btn-icon:focus, .btn-icon:hover {
+    background-color: hsla(0,20%,80%,.8);
+    box-shadow:none;
+    color: #fff;
+    transform: translateY(1.5px);
+}
+.btn-icon .txt {
+    transition: .1s ease;
+    overflow: hidden;
+    padding: 0 8px 0 2px;
+    max-width: 150px;
+    font-size: 14px;
+    vertical-align:top;
+}
+#home main{
+    margin: 10px;
+    flex-grow: 1;
+}
+#home main h2{
+    height: 32px;
+    line-height: 32px;
+}
+#home main h2 .icon {
+    color: #EE9572;
+    font-size: 1em;
+}
+#home .board-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+#home .board-item{
+    border-radius: 3px;
+    margin: 10px;
+    box-sizing: border-box;
+    width: 300px;
+    height: 200px;
+    background-color: #EE9572;
+    cursor: pointer;
+    box-shadow: 1px 5px 20px 0 rgb(0 0 0 / 30%);
+}
+#home .board-item:hover{
+    box-shadow: 1px 5px 20px 0 rgb(0 0 0 / 50%);
+}
+#home .board-item .title{
+    display: inline-block;
+    margin: 20px;
+    height: 160px;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 700;
+    word-break: break-all;
+    word-wrap: break-word;
+    color: #E2E4E6;
+}
+/* form textarea*/
+textarea, input {
+    margin: 0 0 1.2em;
+}
+.form-field {
+    display: block;
+    margin: 0 0 1.2em;
+    padding: .5em;
+    width: 100%;
+    background-color: #FAFBFC;
+    border: 2px solid #DFE1E6;
+    box-sizing: border-box;
+    border-radius: 3px;
+    outline: none;
+    height: 44px;
+}
+.form-field-input {
+    display: block;
+    margin: -4px 0;
+    padding: 4px 8px;
+    resize: none;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    width: 100%;
+    height: 28px;
+    min-height: 20px;
+    max-height: 256px;
+    background: transparent;
+    box-sizing: border-box;
+    box-shadow: none;
+    cursor: pointer;
+    color: #172b4d;
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: .3s ease;
+}
+.form-field-input:focus {
+    background: #fff;
+    box-shadow: inset 0 0 0 2px #BCD2EE;
+}
+#home .create-new-board{
+    background-color: rgba(9,30,66,.08)
+}
+#home .create-new-board .title {
+    margin-left: 0;
+    color: #172b4d;
+    width: 100%;
+    text-align: center;
+    line-height: 160px;
+}
+
+.icon.icon-more:before {
+    content: "\E94B";
+}
+.icon.icon-description:before {
+    content: "\E91D";
+}
+.icon.icon-comment:before {
+    content: "\E91A";
+}
+.icon.icon-attachment:before {
+    content: "\E908";
+}
+.icon.icon-close:before {
+    content: "\E918";
+}
+.icon.icon-card:before {
+    content: "\E910";
+}
+.icon-card-cover:before {
+    content: "\E911";
+}
+.icon-activity:before {
+    content: "\E900";
+}

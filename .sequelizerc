@@ -1,0 +1,10 @@
+const path = require('path');
+
+module.exports = {
+    'env': 'development',
+    'config': path.resolve('src', 'configs/database.json'), //数据库配置文件存放目录
+    'migrations-path': path.resolve('src', 'database/migrations'),//迁移脚本存放目录
+    'seeders-path': path.resolve('src', 'database/seeders'),//种子文件存放目录
+    'models-path': path.resolve('src', 'database/models'),//模型文件存放目录
+    'debug': true
+};
